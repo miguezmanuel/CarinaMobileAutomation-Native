@@ -1,0 +1,4 @@
+[2025-01-30 01:00:10] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-01-30 01:00:10] [1] [INFO] TEST [carinanativeautomation - SuccessfulLoginTest] STARTED at [22:00:10 2025-01-29]
+[2025-01-30 01:00:10] [1] [INFO] Starting driver session...
+[2025-01-30 01:00:11] [1] [ERROR] Failed to attach artifact reference 'app' to test run because it has not been started yet.
