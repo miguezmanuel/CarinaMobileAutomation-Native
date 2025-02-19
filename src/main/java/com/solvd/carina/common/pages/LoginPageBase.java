@@ -16,4 +16,6 @@ public abstract class LoginPageBase extends AbstractPage {
     public abstract void clickLoginButton ();
 
     public abstract boolean isErrorMessagePresent ();
+
+    public abstract boolean isLoginButtonPresent();
 }

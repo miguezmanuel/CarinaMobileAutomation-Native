@@ -6,13 +6,21 @@ import org.openqa.selenium.WebDriver;
 
 public abstract class ProductsPageBase extends AbstractPage {
 
-
-
     public ProductsPageBase(WebDriver driver) {
         super(driver);
     }
 
     public abstract HeaderComponentBase getHeaderMenuComponent();
 
-    public abstract boolean isPageTitlePresent ();
+    public abstract boolean isPageTitlePresent();
+
+    public abstract void sortByPriceLowToHigh();
+
+    public abstract boolean isSortedByPriceAscending();
+
+    public abstract ProductDetailsPageBase openProductDetails(String itemName);
+
+    public abstract void addItemToCart(String itemName);
+
+    public abstract CartPageBase openCart();
 }

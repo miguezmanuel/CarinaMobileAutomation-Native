@@ -1,0 +1,9 @@
+com/solvd/carina/android/pages/ProductsPage.class
+com/solvd/carina/android/pages/LoginPage.class
+com/solvd/carina/common/components/HeaderComponentBase.class
+com/solvd/carina/common/pages/CartPageBase.class
+com/solvd/carina/common/pages/ProductsPageBase.class
+com/solvd/carina/common/pages/MenuPageBase.class
+com/solvd/carina/ios/pages/LoginPage.class
+com/solvd/carina/ios/pages/ProductsPage.class
+com/solvd/carina/common/pages/LoginPageBase.class

@@ -15,7 +15,7 @@ public class LoginPage extends LoginPageBase {
     private ExtendedWebElement passwordField;
     @ExtendedFindBy(accessibilityId = "test-LOGIN")
     private ExtendedWebElement loginButton;
-    @FindBy(xpath = "//android.widget.TextView[@text=\"Username and password do not match any user in this service.\"]")
+    @ExtendedFindBy(accessibilityId = "test-Error message")
     private ExtendedWebElement errorMessage;
 
     public LoginPage(WebDriver driver) {
@@ -41,4 +41,10 @@ public class LoginPage extends LoginPageBase {
     public boolean isErrorMessagePresent() {
         return errorMessage.isPresent();
     }
+
+    @Override
+    public boolean isLoginButtonPresent() {
+        return loginButton.isPresent();
+    }
+
 }

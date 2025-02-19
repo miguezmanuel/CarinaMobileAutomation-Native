@@ -17,5 +17,5 @@ public abstract class HeaderComponentBase extends AbstractUIObject {
     }
 
     public abstract CartPageBase clickOnCartButton();
-    public abstract MenuPageBase clickOnMenuButton();
+    public abstract void clickOnMenuButton();
 }
