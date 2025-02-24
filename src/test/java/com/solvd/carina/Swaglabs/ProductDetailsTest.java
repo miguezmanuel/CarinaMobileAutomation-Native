@@ -11,7 +11,7 @@ import static com.zebrunner.agent.core.webdriver.RemoteWebDriverFactory.getDrive
 public class ProductDetailsTest implements IAbstractTest {
 
     @Test
-    public void sroductDetailsTest() {
+    public void testProductDetailsPageOpens() {
         LoginPage loginPage = new LoginPage(getDriver());
         ProductsPage productsPage = new ProductsPage(getDriver());
 

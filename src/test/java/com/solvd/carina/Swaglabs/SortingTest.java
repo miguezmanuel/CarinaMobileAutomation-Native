@@ -10,7 +10,7 @@ import static com.zebrunner.agent.core.webdriver.RemoteWebDriverFactory.getDrive
 public class SortingTest implements IAbstractTest {
 
     @Test
-    public void sortingProductsTest() {
+    public void testSortingByPriceLowToHigh() {
         LoginPage loginPage = new LoginPage(getDriver());
         ProductsPage productsPage = new ProductsPage(getDriver());
 

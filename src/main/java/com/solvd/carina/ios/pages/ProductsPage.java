@@ -33,13 +33,16 @@ public class ProductsPage extends ProductsPageBase {
     @ExtendedFindBy(accessibilityId = "test-CART")
     private ExtendedWebElement cartButton;
 
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeOther[`name == \"headerContainer\"`]/XCUIElementTypeImage" )
+    private HeaderComponentBase headerComponent;
+
     public ProductsPage(WebDriver driver) {
         super(driver);
     }
 
     @Override
     public HeaderComponentBase getHeaderMenuComponent() {
-        return null;
+        return headerComponent;
     }
 
     @Override

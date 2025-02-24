@@ -33,6 +33,9 @@ public class ProductsPage extends ProductsPageBase {
     @ExtendedFindBy(accessibilityId = "test-CART")
     private ExtendedWebElement cartButton;
 
+    @ExtendedFindBy(androidUIAutomator = "new UiSelector().className(\"android.widget.ImageView\").instance(0)")
+    private HeaderComponentBase headerComponent;
+
     public ProductsPage(WebDriver driver) {
         super(driver);
     }
@@ -50,7 +53,7 @@ public class ProductsPage extends ProductsPageBase {
 
     @Override
     public HeaderComponentBase getHeaderMenuComponent() {
-        return null;
+        return headerComponent;
     }
 
     @Override
